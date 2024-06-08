@@ -96,7 +96,7 @@ for row in worksheet.iter_rows():
     valid_truth[bugid] = [int(row_data[1]), int(row_data[2]), int(row_data[3]), int(row_data[4]), int(row_data[5]), int(row_data[6])]
 
 test_truth = {}
-with open('P-EPR/test_code_rename.csv', 'r', encoding='utf-8') as csvfile:
+with open('P-EPR/defects_rename.csv', 'r', encoding='utf-8') as csvfile:
     reader = csv.reader(csvfile, delimiter='\t')
     i = 0
     for row in reader:
